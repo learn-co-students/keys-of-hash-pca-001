@@ -5,9 +5,7 @@ class Hash
     array = []
     place = arguments
     self.each do |key, value|
-      place.each do |i|
-        array << key if i == value
-      end
+      place.each { |i| array << key if i == value }
     end
     array
   end
